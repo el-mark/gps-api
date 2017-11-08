@@ -1,0 +1,5 @@
+class Waypoint < ApplicationRecord
+
+  
+  
+end

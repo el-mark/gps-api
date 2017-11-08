@@ -4,10 +4,12 @@ class CreatingWaypointsTest < ActionDispatch::IntegrationTest
   test "create waypoints" do
     post "/api/v1/waypoints",
       params: { 
-        latitude: 20.23,
-        longitude: -0.56,
-        sent_at: Time.now,
-        vehicle_identifier: "HA-3452"
+        waypoint: {
+          latitude: 20.23,
+          longitude: -0.56,
+          sent_at: Time.now,
+          vehicle_identifier: "HA-3452"
+        }
        }
 
     assert_equal 201, response.status

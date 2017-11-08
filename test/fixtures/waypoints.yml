@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  latitude: 1.28292892
+  longitude: 10.28292892
+  sent_at: 2010-09-18 17:21:23.926511 Z
+  vehicle_identifier: 'unique_1'
+
+two:
+  latitude: 2829.29289
+  longitude: 2839.1901
+  sent_at: 2010-09-18 17:21:23.926511 Z
+  vehicle_identifier: 'unique_3'

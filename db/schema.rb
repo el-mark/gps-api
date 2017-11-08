@@ -10,9 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20171108220818) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "waypoints", force: :cascade do |t|
+    t.float "latitude"
+    t.float "longitude"
+    t.datetime "sent_at"
+    t.string "vehicle_identifier"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end
